@@ -1,0 +1,22 @@
+.Meaning {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: solid 1px #ccd0d5;
+  border-radius: 5px;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.Definition {
+  margin: 0;
+}
+
+.Example {
+  color: #eb455f;
+  font-style: italic;
+  margin: 0;
+}
