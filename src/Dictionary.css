@@ -1,0 +1,20 @@
+.Dictionary {
+  font-family: "Poppins", sans-serif;
+}
+
+input {
+  padding: 5px;
+  margin-left: 3px;
+  border-radius: 4px;
+  border: solid 1px #ccd0d5;
+  width: 400px;
+}
+
+input:focus {
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: #eb455f;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0 0 10px rgba(235, 69, 95, 0.9);
+  outline: 0 none;
+}
