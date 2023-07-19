@@ -9,7 +9,7 @@ export default function Synonyms(props) {
           if (props.synonyms.length === 1) {
             return <span key={index}>{synonym}.</span>;
           } else {
-            if (index + 1 != props.synonyms.length) {
+            if (index + 1 !== props.synonyms.length) {
               return <span key={index}>{synonym}, </span>;
             } else {
               return <span key={index}>{synonym}.</span>;
