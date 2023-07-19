@@ -6,6 +6,15 @@ import Results from "./Results";
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
   let [results, setResults] = useState(null);
+  let [phonetics, setPhonetics] = useState(null);
+
+  function handlePhoneticResponse(response) {
+    if (response.data[0].phonetics) {
+      setPhonetics(response.data[0].phonetics[0]);
+    } else {
+      return null;
+    }
+  }
 
   function handleResponse(response) {
     setResults(response.data);
@@ -17,24 +26,27 @@ export default function Dictionary() {
 
   function search(event) {
     event.preventDefault();
-    alert(`Searching for ${keyword}`);
 
     let apiKey = "d84fo7b1165495bfa04e4513f7c437tf";
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
+    let phoneticApiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
+    axios.get(phoneticApiUrl).then(handlePhoneticResponse);
   }
 
   return (
     <div className="Dictionary">
       <form onSubmit={search}>
         <input
+          autoFocus
           type="search"
-          autoFocus={true}
+          className="fontAwesome"
+          name="emailAddress"
+          placeholder="&#xF002; Search"
           onChange={handleKeywordChange}
-          placeholder="Search"
         />
       </form>
-      <Results results={results} />
+      <Results results={results} phonetics={phonetics} />
     </div>
   );
 }

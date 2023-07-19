@@ -1,9 +1,37 @@
 .Word {
-  font-size: 25px;
+  font-size: 30px;
+  margin: 0;
+}
+
+.PhoneticLine {
+  margin-top: 5px;
+  align-items: center;
+  color: #eb455f;
+  display: flex;
+  gap: 10px;
 }
 
 .Phonetic {
-  font-size: 15px;
-  color: #eb455f;
-  margin-bottom: 20px;
+  display: flex;
+  width: fit-content;
+  font-size: 20px;
+  margin: 0;
+}
+
+.PlayLink {
+  padding: 0;
+  text-decoration: none;
+  display: flex;
+  border: none;
+  border-radius: 50px;
+}
+
+audio {
+  display: flex;
+  border-radius: 50px;
+  display: flex;
+}
+
+.MeaningContainer {
+  margin-top: 20px;
 }
