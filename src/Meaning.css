@@ -20,3 +20,12 @@ h3 {
   font-style: italic;
   margin: 0;
 }
+
+.Synonyms {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.Antonyms {
+  font-size: 14px;
+}
