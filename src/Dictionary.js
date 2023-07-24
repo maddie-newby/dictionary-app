@@ -9,11 +9,7 @@ export default function Dictionary() {
   let [phonetics, setPhonetics] = useState(null);
 
   function handlePhoneticResponse(response) {
-    if (response.data[0].phonetics) {
-      setPhonetics(response.data[0].phonetics[0]);
-    } else {
-      return null;
-    }
+    setPhonetics(response.data[0].phonetics[0]);
   }
 
   function handleResponse(response) {
@@ -26,7 +22,6 @@ export default function Dictionary() {
 
   function search(event) {
     event.preventDefault();
-
     let apiKey = "d84fo7b1165495bfa04e4513f7c437tf";
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
     let phoneticApiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;

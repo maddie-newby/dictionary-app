@@ -4,7 +4,7 @@ import Dictionary from "./Dictionary";
 function App() {
   return (
     <div className="App">
-      <header className="app-header">Dictionary</header>
+      <header className="app-header">Maddie's Dictionary</header>
       <main>
         <Dictionary />
       </main>
@@ -18,15 +18,7 @@ function App() {
         >
           open-sourced on GitHub
         </a>{" "}
-        and{" "}
-        <a
-          href="https://www.netlify.com/"
-          target="_blank"
-          className="footer-link"
-          rel="noopener noreferrer"
-        >
-          hosted on Netlify
-        </a>
+        and hosted on Netlify
       </footer>
     </div>
   );

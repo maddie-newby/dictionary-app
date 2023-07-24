@@ -1,5 +1,14 @@
+.WordContainer {
+  padding: 20px 30px 10px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0 0 10px rgba(235, 69, 95, 0.9);
+}
+
 .Word {
-  font-size: 30px;
+  font-weight: 500;
+  font-size: 35px;
   margin: 0;
 }
 
@@ -16,6 +25,7 @@
   width: fit-content;
   font-size: 20px;
   margin: 0;
+  font-weight: 600;
 }
 
 .PlayLink {
