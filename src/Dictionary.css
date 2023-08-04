@@ -27,8 +27,8 @@ form {
   border-radius: 0 0 5px 5px;
   margin-bottom: 20px;
   border-radius: 0 0 4px 4px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
-    0 0 10px rgba(235, 69, 95, 0.9);
+  box-shadow: -4px 1px 1px rgba(235, 69, 95, 0.9),
+    0px 4px 1px rgba(235, 69, 95, 0.9), 3px 1px 1px rgba(235, 69, 95, 0.9);
 }
 
 input {
