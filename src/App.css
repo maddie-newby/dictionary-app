@@ -16,9 +16,19 @@ header {
     0 0 10px rgba(235, 69, 95, 0.9);
 }
 
+header::selection {
+  background-color: rgb(235, 69, 95, 0.5);
+  color: white;
+}
+
 footer {
   margin: 30px;
   text-align: center;
+}
+
+footer::selection {
+  background-color: rgb(235, 69, 95, 0.5);
+  color: white;
 }
 
 footer a {
@@ -27,4 +37,9 @@ footer a {
 
 footer a:hover {
   color: #bb011d;
+}
+
+footer a::selection {
+  background-color: rgb(235, 69, 95, 0.5);
+  color: #eb455f;
 }

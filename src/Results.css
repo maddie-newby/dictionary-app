@@ -12,6 +12,11 @@
   margin: 0;
 }
 
+.Word::selection {
+  background-color: rgb(235, 69, 95, 0.5);
+  color: white;
+}
+
 .PhoneticLine {
   margin-top: 5px;
   align-items: center;
@@ -26,6 +31,11 @@
   font-size: 20px;
   margin: 0;
   font-weight: 600;
+}
+
+.Phonetic::selection {
+  background-color: rgb(235, 69, 95, 0.5);
+  color: white;
 }
 
 .PlayLink {

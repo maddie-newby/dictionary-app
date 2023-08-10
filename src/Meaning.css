@@ -14,8 +14,18 @@ h3 {
   text-transform: uppercase;
 }
 
+h3::selection {
+  background-color: rgb(235, 69, 95, 0.5);
+  color: white;
+}
+
 .Definition {
   margin: 0;
+}
+
+.Definition::selection {
+  background-color: rgb(235, 69, 95, 0.5);
+  color: white;
 }
 
 .Example {
@@ -24,12 +34,27 @@ h3 {
   margin: 0;
 }
 
+.Example::selection {
+  background-color: rgb(235, 69, 95, 0.5);
+  color: white;
+}
+
 .Synonyms {
   font-size: 14px;
   margin-top: 5px;
 }
 
+.Synonyms::selection {
+  background-color: rgb(235, 69, 95, 0.5);
+  color: white;
+}
+
 .Antonyms {
   font-size: 14px;
   margin-top: 5px;
+}
+
+.Antonyms::selection {
+  background-color: rgb(235, 69, 95, 0.5);
+  color: white;
 }
