@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Antonyms(props) {
-  if (props.antonyms) {
+  if (props.antonyms.length != 0) {
     return (
       <div className="Antonyms">
         <span>Antonyms: </span>

@@ -22,13 +22,8 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 form {
-  background-color: white;
   padding-bottom: 5px;
-  border-radius: 0 0 5px 5px;
   margin-bottom: 20px;
-  border-radius: 0 0 4px 4px;
-  box-shadow: -4px 1px 1px rgba(235, 69, 95, 0.9),
-    0px 4px 1px rgba(235, 69, 95, 0.9), 3px 1px 1px rgba(235, 69, 95, 0.9);
 }
 
 input {
@@ -36,7 +31,7 @@ input {
   margin: auto;
   padding: 10px 15px;
   border-radius: 5px;
-  border: solid 1px #ccd0d5;
+  border: solid 1px rgb(235, 69, 95, 0.8);
   min-width: 50%;
   max-width: 400px;
   margin-bottom: 20px;

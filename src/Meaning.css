@@ -8,6 +8,7 @@
 }
 
 h3 {
+  margin-bottom: 10px;
   font-family: "Victor Mono", monospace;
   font-size: 20px;
   font-weight: 700;
@@ -31,7 +32,7 @@ h3::selection {
 .Example {
   color: #eb455f;
   font-style: italic;
-  margin: 0;
+  margin: 10px 0 0;
 }
 
 .Example::selection {
@@ -40,8 +41,9 @@ h3::selection {
 }
 
 .Synonyms {
+  font-style: italic;
   font-size: 14px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .Synonyms::selection {
@@ -50,6 +52,7 @@ h3::selection {
 }
 
 .Antonyms {
+  font-style: italic;
   font-size: 14px;
   margin-top: 5px;
 }

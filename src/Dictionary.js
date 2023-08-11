@@ -51,7 +51,7 @@ export default function Dictionary() {
     load();
     return (
       <div className="Dictionary">
-        <form onSubmit={search}>
+        <form onSubmit={handleSubmit}>
           <input
             autoFocus
             type="search"
