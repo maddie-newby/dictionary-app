@@ -5,6 +5,12 @@
   font-family: "Poppins", sans-serif;
 }
 
+@media (max-width: 1099px) {
+  .App {
+    width: 700px;
+  }
+}
+
 header {
   margin-bottom: 10px;
   text-align: center;
