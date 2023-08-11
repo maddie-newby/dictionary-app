@@ -12,13 +12,7 @@ export default function Results(props) {
           <Phonetics phonetics={props.results.phonetics[0]} />
         </div>
         <div className="MeaningContainer">
-          {props.results.meanings.map(function (meaning, index) {
-            return (
-              <div key={index}>
-                <Meaning meaning={meaning} />
-              </div>
-            );
-          })}
+          <Meaning meaning={props.results.meanings} />
         </div>
       </div>
     );
