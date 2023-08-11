@@ -9,7 +9,7 @@ export default function Dictionary() {
   const [loaded, setLoaded] = useState(false);
 
   function handleResponse(response) {
-    setResults(response.data);
+    setResults(response.data[0]);
   }
 
   function handleKeywordChange(event) {
@@ -21,16 +21,20 @@ export default function Dictionary() {
     search();
   }
 
-  function search(event) {
-    event.preventDefault();
+  function search() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
   }
 
   if (loaded) {
     return (
       <div className="Dictionary">
-        <form onSubmit={search}>
+        <form onSubmit={handleSubmit}>
           <input
             autoFocus
             type="search"
